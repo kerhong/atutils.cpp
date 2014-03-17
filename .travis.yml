@@ -1,0 +1,10 @@
+language: cpp
+compiler:
+    - gcc
+before_script:
+    - BOOST_ROOT=/usr/local/libboost
+    - sudo apt-get install libboost-test-dev
+    - cmake .
+script:
+    - make
+    - make check
