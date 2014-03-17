@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 2.8.7)
 project(atutils)
 
 # CMake options
@@ -29,7 +29,7 @@ set(HAVE_ALL_DEPS ON)
 set(Boost_FIND_QUIETLY ON)
 set(Boost_USE_MULTITHREADED ON)
 add_definitions(-DBOOST_ALL_NO_LIB)
-find_package(Boost 1.55.0 COMPONENTS unit_test_framework REQUIRED)
+find_package(Boost 1.46.0 COMPONENTS unit_test_framework REQUIRED)
 if(NOT ${Boost_FOUND})
     set(HAVE_ALL_DEPS OFF)
     message("Boost not found")
