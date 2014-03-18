@@ -19,7 +19,7 @@ if (MSVC)
     endforeach()
 elseif(CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
     foreach(flag_var CMAKE_CXX_FLAGS CMAKE_CXX_FLAGS_DEBUG CMAKE_CXX_FLAGS_RELEASE CMAKE_CXX_FLAGS_MINSIZEREL CMAKE_CXX_FLAGS_RELWITHDEBINFO)
-        set(${flag_var} "${${flag_var}} -Wall -Wno-long-long -pedantic") # Increase warning level
+        set(${flag_var} "${${flag_var}} -std=c++11 -Wall -Wno-long-long -pedantic") # Increase warning level
     endforeach()
 endif()
 
