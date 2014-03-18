@@ -16,7 +16,6 @@ BOOST_AUTO_TEST_CASE(type_sizes)
     BOOST_CHECK_EQUAL(sizeof(::atutils::uint64_t), 8);
     BOOST_CHECK_EQUAL(sizeof(float), 4);
     BOOST_CHECK_EQUAL(sizeof(double), 8);
-    BOOST_CHECK_EQUAL(sizeof(void*), 8);
 }
 
 BOOST_AUTO_TEST_CASE(packed_struct)
